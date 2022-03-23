@@ -1,11 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Home from './pages/Home';
-
+import React from "react";
+import ReactDOM from "react-dom";
+// Rotas
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Router/routes";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <Router />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
