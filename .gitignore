@@ -10,7 +10,6 @@
 
 # production
 /build
-alura-geek
 # misc
 .DS_Store
 .env.local
