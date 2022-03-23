@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import Abacaxi from "../../Components/a/Abacaxi";
 // Components
 import Navbar from "../../Components/Navbar";
 
 const Home = () => {
+  const [x, setX] = useState(true);
   return (
     <>
       <header>
-        <Navbar />
+        <button onClick={() => setX(!x)}></button>
+        {x ? <Navbar /> : <Abacaxi />}
       </header>
 
       <main></main>
