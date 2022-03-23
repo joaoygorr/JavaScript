@@ -1,10 +1,18 @@
-import react from "react";
+import React from "react";
+// Components
+import Navbar from "../../Components/Navbar";
 
 const Home = () => {
   return (
-    <button type="button" className="btn btn-dark">
-      Dark
-    </button>
+    <>
+      <header>
+        <Navbar />
+      </header>
+
+      <main></main>
+
+      <footer></footer>
+    </>
   );
 };
 
