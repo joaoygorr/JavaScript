@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Alura-Geek/static/js/main.d390ffb6.js",
+    "main.js": "/Alura-Geek/static/js/main.c7838571.js",
     "index.html": "/Alura-Geek/index.html",
-    "main.d390ffb6.js.map": "/Alura-Geek/static/js/main.d390ffb6.js.map"
+    "main.c7838571.js.map": "/Alura-Geek/static/js/main.c7838571.js.map"
   },
   "entrypoints": [
-    "static/js/main.d390ffb6.js"
+    "static/js/main.c7838571.js"
   ]
 }
