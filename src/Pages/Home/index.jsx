@@ -1,7 +1,23 @@
 import React from "react";
+// Pages
+import Navbar from "../../Components/Navbar";
 
 const Home = () => {
-  return <div>Olá Mundo!</div>
+  return (
+    <>
+      <header>
+        <Navbar />
+      </header>
+
+      <main>
+
+      </main>
+
+      <footer>
+
+      </footer>
+    </>
+  )
   
 };
 
