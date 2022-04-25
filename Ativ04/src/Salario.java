@@ -32,7 +32,9 @@ horaTrab = horat;
 }
 
 public double getHoraTrab()
-{return horaTrab;
+{
+
+  return horaTrab;
 }
 
 public void setSalHora(double salh)
@@ -83,4 +85,29 @@ public void getDemonstrativo()
 
  System.out.printf("Digite o salário hora do funcionário: \n",salHora);
  salHora = entrada.nextDouble();
+
+ System.out.printf("Total a receber: R$ %.2f\n\n", getTotal());
+ //double total = entrada.nextDouble();
+
  }
+}
+
+}
+
+class SalarioTeste
+{
+    
+    public static void main(String args [])
+    {
+       Scanner entrada = new Scanner(System.in);
+         String x = "S";
+         while (x.equals("S")) {
+         Salario func1 = new Salario("","","",0.0,0.0);
+         func1.getDemonstrativo();
+         System.out.println("Mais um funcionário?(S/N)");  
+         x = entrada.nextLine();
+         entrada.close();
+       
+    }
+}
+}
