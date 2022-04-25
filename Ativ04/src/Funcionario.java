@@ -31,28 +31,28 @@ public class Funcionario{
         this.salario = salario;}
         else{System.out.println("Salário negativo, não configurado!");}
     }
-}
+
 
 
     public static void main(String args[]){
-        Empregado empregado1 = new Empregado("Junior", "Lacerda", 1500.500);
-        Empregado empregado2 = new Empregado("Luiz", "Carvalho", 45000.000);
+        Funcionario funcionario1 = new Funcionario("Junior", "Lacerda", 1500.500);
+        Funcionario funcionario2 = new Funcionario("Luiz", "Carvalho", 45000.000);
        
-    System.out.println("Empregado 1: " + empregado1.getNome() + " " +
-            empregado1.getSobrenome() +"\nsalario: "+ empregado1.getSalario());
+    System.out.println("Empregado 1: " + funcionario1.getNome() + " " +
+            funcionario1.getSobrenome() +"\nsalario: "+ funcionario1.getSalario());
  
-    System.out.println("Empregado 1: " + empregado2.getNome() + " " +
-            empregado2.getSobrenome() +"\nsalario: "+ empregado2.getSalario()); 
+    System.out.println("Empregado 1: " + funcionario2.getNome() + " " +
+            funcionario2.getSobrenome() +"\nsalario: "+ funcionario2.getSalario()); 
   
-    empregado1.setSalario(empregado1.getSalario() + (empregado1.getSalario() * .10));
-    empregado2.setSalario(empregado2.getSalario() + (empregado2.getSalario() * .10));
+    funcionario1.setSalario(funcionario1.getSalario() + (funcionario1.getSalario() * .10));
+    funcionario2.setSalario(funcionario2.getSalario() + (funcionario2.getSalario() * .10));
        
     System.out.println("\nCom acrécimo 10%: \n"
-            + "Empregado 1: " + empregado1.getNome() + " " +
-            empregado1.getSobrenome() +"\nsalario: "+ empregado1.getSalario());
+            + "Empregado 1: " + funcionario1.getNome() + " " +
+            funcionario1.getSobrenome() +"\nsalario: "+ funcionario1.getSalario());
  
-    System.out.println("Empregado 1: " + empregado2.getNome() + " " +
-            empregado2.getSobrenome() +"\nsalario: "+ empregado2.getSalario());
+    System.out.println("Empregado 1: " + funcionario2.getNome() + " " +
+            funcionario2.getSobrenome() +"\nsalario: "+ funcionario2.getSalario());
     }
 
 }

@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class ativ01
@@ -7,10 +6,7 @@ public class ativ01
     {
         //Declaração de variaveis
         Scanner entrada;
-        int x;
-        int y;
-        int z;
-        int prod;
+        int x, y, z, prod;
        
         entrada = new Scanner(System.in);
        
@@ -29,5 +25,7 @@ public class ativ01
        
         //Saida dos resultados
         System.out.println("O produto dos numeros é " + prod);
+
+        entrada.close();
     }
 }

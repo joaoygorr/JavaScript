@@ -1,10 +1,8 @@
+import java.util.Scanner;
+
 public class Date {
 
-    private int dia;  
-
-    private int mes;  
-
-    private int ano;  
+    private int dia, mes, ano;  
 
     public Date(int d, int m, int a)  
     {  
@@ -43,11 +41,10 @@ public class Date {
     }  
 }
 
-public class DateTest {
+class DateTest {
     public static void main( String[] args ) {
-        int dia = 0;
-        int mes = 0;
-        int ano = 0;
+        int dia, mes, ano = 0;
+
         Scanner s = new Scanner( System.in );
         System.out.println( "Digite o dia: " );        
         dia = s.nextInt();
@@ -58,6 +55,8 @@ public class DateTest {
 
         Date d = new Date(dia,mes,ano);
         System.out.println( "A data é: " + d.displayDate() );
+
+        s.close();
     }
 
 }
