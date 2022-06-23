@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
 
-export const theme = createTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#AE0FEA",
@@ -32,7 +32,7 @@ export const theme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          boxShadow: "0px 0px 39px rgba 0, 0, 0, 0.05",
+          boxShadow: "0px 0px 39px rgba(0, 0, 0, 0.05)",
         },
       },
     },
@@ -62,3 +62,5 @@ export const theme = createTheme({
     },
   },
 });
+
+export default theme;
