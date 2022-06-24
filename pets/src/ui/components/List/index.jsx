@@ -8,23 +8,29 @@ import {
   Name,
   Photo,
 } from "./style";
+// Service quebra de texto
+import { TextService } from "../../../data/services/TextService";
 
-export default function List() {
+export default function List(props) {
+  // Tamanho do texto
+  const sizeMaxText = 200;
+
   return (
     <ListStyled>
-      <ItenList>
-        <Photo src={"#"} />
-        <Information>
-          <Name>bidu</Name>
-          <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem unde ad
-            quisquam numquam sed ipsum distinctio quas, ut voluptatibus harum,
-            facere placeat tempora! Quidem corrupti saepe odit delectus
-            doloremque quis?
-          </Description>
-          <Button variant={"contained"}>Adotar</Button>
-        </Information>
-      </ItenList>
+      {props.pets.map((pet) => (
+        <ItenList key={pet.id}>
+          <Photo src={pet.photo} alt={pet.name} />
+          <Information>
+            <Name>{pet.name}</Name>
+            <Description>
+              {TextService.LimitText(pet.history, sizeMaxText)}
+            </Description>
+            <Button variant={"contained"} fullWidth>
+              Adotar {pet.name}
+            </Button>
+          </Information>
+        </ItenList>
+      ))}
     </ListStyled>
   );
 }

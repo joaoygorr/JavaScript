@@ -14,7 +14,24 @@ const Home = () => {
           </span>
         }
       />
-      <List />
+      <List
+        pets={[
+          {
+            id: 1,
+            name: "bidu",
+            history:
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis culpa odit saepe eaque itaque similique, obcaecati sapiente nobis suscipit corrupti? Voluptatem laborum eum nesciunt rerum quibusdam quos eligendi enim doloremque?",
+            photo: "#",
+          },
+          {
+            id: 2,
+            name: "Scooby",
+            history:
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis culpa odit saepe eaque itaque similique, obcaecati sapiente nobis suscipit corrupti? Voluptatem laborum eum nesciunt rerum quibusdam quos eligendi enim doloremque?",
+            photo: "#",
+          },
+        ]}
+      />
     </div>
   );
 };
