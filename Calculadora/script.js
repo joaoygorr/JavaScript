@@ -35,5 +35,4 @@ function createButton() {
 
 function insert(num) {
   document.querySelector("#resultado").innerHTML = num;
-
 }
