@@ -3,11 +3,9 @@ function createTag() {
   calculadora.innerHTML = `
    <div class="calculadora">
             <h1>Calculadora</h1>
-            <p id="resultado"><strong>0</strong></p>
-            <table>
-              
-            </table>
-        </div>
+            <input id="resultado">
+            <table></table>
+   </div>
 `
 }
 
@@ -15,24 +13,36 @@ let caracteres = ["7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "C
 
 function createButton() {
   let button = document.querySelector("table");
-  let count = 0
-  let html = '';
+  let html = '<tr>';
 
-  for (let i = 0; i < 4; i++) {
-    html = html + `
-      <tr>
-      </tr>
-    `
-    for (let i = 0; i < 4; i++) {
-      html = html + `
-      <td><button onclick="insert(${caracteres[count]})" >${caracteres[count]}</button></td>
-      `
-      count++;
+  let i = 0;
+  caracteres.forEach(c => {
+    if (i > 3) {
+      html += '</tr><tr>';
+      i = 0;
     }
-  }
+    html += `<td><button onclick="${c === 'C' ? "clean()" : `insert('${c}')`}">${c}</button></td>`;
+    i++;
+  });
+  html += '</tr>'
+
+
   button.innerHTML = html;
 }
 
 function insert(num) {
-  document.querySelector("#resultado").innerHTML = num;
+  document.querySelector("#resultado").value = "PUTA";
+}
+
+function clean() {
+  document.querySelector("#resultado").value = "";
+}
+
+function operacao() {
+  let resultado = document.querySelector("#resultado");
+  if (resultado) {
+    document.querySelector("#resultado").value = eval(resultado);
+  } else {
+    alert("Faça alguma operação!!");
+  }
 }

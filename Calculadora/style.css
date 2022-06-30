@@ -45,4 +45,5 @@ button:hover {
   color: black;
   padding: 5px;
   background-color: #fff;
+  font-weight: bolder;
 }
