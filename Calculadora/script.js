@@ -3,7 +3,7 @@ function createTag() {
   calculadora.innerHTML = `
    <div class="calculadora">
             <h1>Calculadora</h1>
-            <input id="resultado">
+            <input id="resultado" value="0">
             <table></table>
    </div>
 `
@@ -31,7 +31,7 @@ function createButton() {
 }
 
 function insert(num) {
-  document.querySelector("#resultado").value = "PUTA";
+  document.querySelector("#resultado").value += num;
 }
 
 function clean() {
